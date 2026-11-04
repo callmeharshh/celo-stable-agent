@@ -7,6 +7,7 @@ on:
     branches: ["main"]
     paths:
       - 'skills/**'
+      - 'public/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,9 +37,10 @@ jobs:
       # Create the nested directory structure
       - name: Prepare for nested deployment
         run: |
-          mkdir -p staging/skills
+          mkdir -p staging/skills staging/public
           # Move all files (except the staging folder itself) into the subdirectory
           rsync -rr --exclude='staging' ./skills/ staging/skills/
+          rsync -rr --exclude='staging' ./public/ staging/public/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

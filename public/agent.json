@@ -1,0 +1,11 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Celo Stable Agent",
+  "description": "On-device agent that sends, saves, and settles in Ripio's local-currency stablecoins (wARS, wBRL, wMXN, wCOP, wPEN, wCLP) on Celo mainnet via natural language, entirely offline.",
+  "services": [
+    { "name": "web", "endpoint": "https://github.com/callmeharshh/celo-stable-agent" }
+  ],
+  "x402Support": false,
+  "active": true,
+  "supportedTrust": ["reputation"]
+}

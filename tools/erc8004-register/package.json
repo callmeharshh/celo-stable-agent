@@ -1,0 +1,12 @@
+{
+  "name": "erc8004-register",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "register": "node register.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.45.0"
+  }
+}
