@@ -9,6 +9,9 @@ with no cloud inference call ever touching the user's financial data.
 > "Send 20,000 to Juan for rent in reais" → the on-device model parses the request, resolves it to a
 > wBRL transfer, shows a confirmation, and signs/broadcasts it on Celo mainnet.
 
+See [`SUBMISSION.md`](SUBMISSION.md) for the full writeup: how this maps to the track's judging
+criteria, architecture, and how to try it yourself.
+
 ## Why on-device
 
 Two real constraints for LatAm users this directly addresses:
